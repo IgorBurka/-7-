@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> 7.1</title>
+</head>
+<body>
+<script>
+
+var $obj = {green: 'зелений.', red: 'червоний.', blue: 'синій.'};
+
+for($a in $obj){
+$x=$obj[$a];
+document.write("<h2>"+$a+" - в перекладі на укаїнську - "+$x+"</h2>")
+}
+
+var $arr = [1, 2, 3, 7, 6, 9];
+
+function Dobutuk(){
+return $arr[0]+$arr[1]+$arr[2]+$arr[3]+$arr[4]+$arr[5];
+}
+
+function Dobutuk1(){
+return Dobutuk()/$arr.length;
+}
+
+alert(Dobutuk1())
+
+var $mass=[];
+var $i=1;
+while($i<=10){
+
+$mass.push($i);
+$i++;
+}
+
+console.log($mass)
+
+</script>
+</body>
+</html>
